@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta property="og:image" content="/st/og-image.png" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!--    Googe Font - Open Sans-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+
+
+<!--    Font Awesome icons-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+<!--    <link href="st/custom-styles.css" rel="stylesheet" type="text/css" />-->
+
+    <script src="https://code.jquery.com/jquery-1.12.2.min.js" integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk=" crossorigin="anonymous"></script>
+<style>
+    body {
+        background: #fafafa;
+    }
+    #cards .panel, .media-bg, #cards .card-chip {
+        background: white;
+    }
+    #cards-title .card-chip {
+        padding: 15px;
+    }
+    .hide-card {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" style="width: 1200px; margin: 0px auto;">
+        <!-- Cards Box -->
+        <div id="cards-box" style="display: flex;" class="row">
+            <!-- Card Box -->
+            <div class="" style="flex-grow: 1" id="cards">
+                <div class="drag-here">Drag and Drop Content Cards to Create your Page</div>
+                
+ 
+            </div>
+            <!-- Cards Title -->
+            <div class="" style="width: 400px; flex-grow: 0; flex-shrink: 0">
+                <div id="cards-title" class="media-bg">
+                    <div data-card="#media" class="card-chip"><span class="hidden-xs">100%</span>
+                    </div>
+                    <div data-card="#text" class="card-chip"><span class="hidden-xs">50%</span>
+                    </div>
+                    <div data-card="#contact" class="card-chip"><span class="hidden-xs">33% - 67%</span>
+                    </div>
+                    <div data-card="#document" class="card-chip"><span class="hidden-xs">67% - 33%</span>
+                    </div>
+                    <div data-card="#links" class="card-chip"><span class="hidden-xs">33% - 33% - 33%</span>
+                    </div>
+                    <div data-card="#category" class="card-chip"><span class="hidden-xs">25% - 25% - 25% - 25%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--    Card Panels-->
+                <div id="media" class="hide-card">
+                    <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+                <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">100%</td>
+                    </tr>
+                    </table>
+                </div>
+    <div id="contact" class="hide-card">
+        <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+      <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">33%</td>
+                    <td style="padding: 30px;">67%</td>
+                    </tr>
+                    </table>
+    </div>
+    <div id="text" class="hide-card">
+        <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+     <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">50%</td>
+                    <td style="padding: 30px;">50%</td>
+                    </tr>
+                    </table>
+    </div>
+    <div id="document" class="hide-card">
+        <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+       <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">67%</td>
+                    <td style="padding: 30px;">33%</td>
+                    </tr>
+                    </table>
+    </div>
+    <div id="links" class="hide-card">
+        <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+       <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">33%</td>
+                    <td style="padding: 30px;">33%</td>
+                    <td style="padding: 30px;">33%</td>
+                    </tr>
+                    </table>
+    </div>
+    <div id="category" class="hide-card">
+        <div style="width:50px; height:50px; display: inline-block; background: red;" class="drag-handle"></div>
+        <table class="" style="width: 600px; margin: 0px auto; background: white">
+                    <tr>
+                    <td style="padding: 30px;">25%</td>
+                    <td style="padding: 30px;">25%</td>
+                    <td style="padding: 30px;">25%</td>
+                    <td style="padding: 30px;">25%</td>
+                    </tr>
+                    </table>
+    </div>
+
+
+    <script src="st/Sortable.min.js"></script>
+    <!--    Customised by MallowTech-->
+    <script src="st/addCard.js"></script>
+
+</body>
+
+</html>
